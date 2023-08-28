@@ -2,6 +2,6 @@
 """Script takes two strings and concatenate them"""
 
 
-def concat(a: str, b:str) -> str:
+def concat(a: str, b: str) -> str:
     """Concatenate two strings"""
     return a + b
