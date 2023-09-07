@@ -7,7 +7,7 @@ import pymongo
 def schools_by_topic(mongo_collection, topic: str) -> list:
     """Return a list of schools"""
     sch: list = []
-    query  = {"topics": topic}
+    query = {"topics": topic}
 
     for school in mongo_collection.find(query):
         sch.append(school)
