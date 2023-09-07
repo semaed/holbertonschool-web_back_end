@@ -5,7 +5,8 @@ import pymongo
 
 
 def get_nginx_logs_statistics():
-    """Retrieves and displays statistics about Nginx logs stored in MongoDB"""
+    """Retrieves and displays statistics about Nginx 
+    logs stored in MongoDB"""
     client = pymongo.MongoClient("mongodb://localhost:27017/")
 
     db = client["logs"]
@@ -20,7 +21,8 @@ def get_nginx_logs_statistics():
         method_count = collection.count_documents({"method": method})
         method_counts[method] = method_count
 
-    status_logs = collection.count_documents({"method": "GET", "path": "/status"})
+    status_logs = collection.count_documents({"method": "GET", "path":
+                                              "/status"})
 
     print(f"{total_logs} logs")
     print("Methods:")
