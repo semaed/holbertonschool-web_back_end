@@ -34,7 +34,7 @@ class Server:
         return (pagination[range[0]:range[1]])
 
     def index_range(self, page: int, page_size: int) -> Tuple[int, int]:
-        """Return tuple size two"""
+        """Return tuple of size two"""
         end: int = page * page_size
         start: int = end - page_size
 
