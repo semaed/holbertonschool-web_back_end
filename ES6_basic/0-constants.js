@@ -13,7 +13,6 @@ export function taskFirst() {
   
     return combination;
   }
-<<<<<<< HEAD
   
-=======
->>>>>>> a194e7d4a7c2c03864c0ad973ec9c8e232aa325f
+  taskFirst();
+
