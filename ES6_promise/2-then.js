@@ -2,7 +2,8 @@
 export default function handleResponseFromAPI(promise) {
   return promise
     .then(() => ({ status: 200, body: 'success' }))
-    .catch(() => ({ status: 500, body: 'Internal Server Error' }))
+    .catch((error) => {
+      throw error; // Throw the error to be consistent with the rejected promise
+    })
     .finally(() => console.log('Got a response from the API'));
 }
-
