@@ -1,4 +1,4 @@
-/*enlist-disable*/
+/* enlist-disable */
 export default function getStudentIdsSum(students) {
   if (!Array.isArray(students)) {
     return [];
