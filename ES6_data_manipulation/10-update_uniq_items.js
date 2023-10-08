@@ -1,4 +1,4 @@
-/*enlist-disable*/
+/* enlist-disable */
 export default function updateUniqueItems(map) {
   if (!(map instanceof Map)) {
     throw Error('Cannot process');
@@ -12,3 +12,4 @@ export default function updateUniqueItems(map) {
 
   return map;
 }
+
