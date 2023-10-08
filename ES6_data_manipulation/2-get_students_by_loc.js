@@ -1,4 +1,4 @@
-/*enlist-disable*/
+/* enlist-disable */
 export default function getStudentsByLocation(students, city) {
   if (!Array.isArray(students)) {
     return [];
