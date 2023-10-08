@@ -1,7 +1,9 @@
 /*enlist-disable*/
-export default function getListStudentIds(getListStudents) {
-  if (Array.isArray(getListStudents)) {
-    return getListStudents.map((student) => student.id);
+export default function getListStudentIds(students) {
+    if (!Array.isArray(students)) {
+      return [];
+    }
+  
+    const map = students.map((mappedObj) => mappedObj.id);
+    return map;
   }
-  return [];
-}
